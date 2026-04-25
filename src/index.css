@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #cc0000;
+  --color-brand-dark-red: #8b0000;
+  --color-brand-gold: #ffcc00;
+  --color-brand-orange: #ff6600;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-gray-50);
+    color: var(--color-gray-900);
+  }
+}
+
+@layer components {
+  /* Classe auxiliar para os cards manterem a borda e sombras consistentes */
+  .service-card {
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 flex flex-col items-center text-center;
+  }
+}
