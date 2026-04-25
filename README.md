@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Coopstar - Landing Page Refatorada
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma landing page moderna e responsiva desenvolvida para a **Coopstar**, focada em oferecer uma experiência de usuário premium com alta performance e animações fluidas.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O projeto foi construído utilizando as ferramentas mais modernas do ecossistema web:
 
-## React Compiler
+- **React 19**: Biblioteca principal para construção da interface.
+- **Vite 8**: Ferramenta de build extremamente rápida para o desenvolvimento.
+- **TypeScript**: Para garantir a tipagem e segurança do código.
+- **Tailwind CSS 4**: Framework utilitário para estilização rápida e responsiva.
+- **Framer Motion**: Para micro-animações e transições suaves.
+- **Lucide React**: Biblioteca de ícones modernos e leves.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Como Executar o Projeto
 
-## Expanding the ESLint configuration
+Siga os passos abaixo para rodar o projeto em seu ambiente local:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/antoniosilvaeti-cyber/CoosptarProj3.git
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. **Entre no diretório:**
+   ```bash
+   cd "03 Refatorar Coopstar"
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+5. **Acesse no navegador:**
+   O projeto estará disponível em `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Estrutura do Projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `src/components`: Componentes reutilizáveis (Header, Footer, Hero, etc.).
+- `src/assets`: Imagens e arquivos estáticos locais.
+- `public/`: Arquivos públicos e imagens globais.
+- `src/App.tsx`: Componente principal que organiza a estrutura da página.
+- `src/index.css`: Configurações globais de estilo e Tailwind.
+
+## 📄 Licença
+
+Este projeto é de uso privado. Todos os direitos reservados à Coopstar.
+
+---
+Desenvolvido com ❤️ por [Antonio Silva](https://github.com/antoniosilvaeti-cyber).
